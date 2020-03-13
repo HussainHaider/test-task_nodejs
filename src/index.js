@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000
 // Use this to bypass CORS, I know this is not the right way!!
 app.use(cors());
 
-app.use(express.json())
+app.use(express.json()) //convert request json into object!
 app.use(userRouter)
 
 app.listen(port, () => {
